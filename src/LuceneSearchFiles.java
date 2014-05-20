@@ -35,6 +35,7 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
+import java.util.*;
 
 /** Simple command-line based search demo. */
 public class LuceneSearchFiles {
@@ -43,7 +44,8 @@ public class LuceneSearchFiles {
   private LuceneSearchFiles() {}
 
   /** Simple command-line based search demo. */
-  public static void  search(String phrase, String field, int hitsPerPage){
+  public static List<SearchEntry> search(String phrase, String field, int hitsPerPage){
+	  List<SearchEntry> ret = new ArrayList<SearchEntry>();
 	  try{
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(new File(m_index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
@@ -61,9 +63,13 @@ public class LuceneSearchFiles {
 	    
 	    for (ScoreDoc hit : hits){
 	        Document doc = searcher.doc(hit.doc);
+	        SearchEntry se = new SearchEntry();
 	        //String path = doc.get("path");	
 	        String title = doc.get("title");
+	        se.setTitle(title);
+	        se.setScore(hit.score);
 	        System.out.println(hit.score+" -"+title);
+	        ret.add(se);
 	    }
 	   reader.close();
 	  }catch (IOException e){
@@ -72,6 +78,7 @@ public class LuceneSearchFiles {
 	  catch (ParseException e){
 		  
 	  }
+	  return ret;
   }
   public static void main(String[] args) throws Exception {
 	  

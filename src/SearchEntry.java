@@ -1,9 +1,11 @@
 
+
 public class SearchEntry {
 	double m_score;
 	String m_title;
 	
 	public SearchEntry(){
+		
 	}
 	
 	double getScore(){ return m_score;}

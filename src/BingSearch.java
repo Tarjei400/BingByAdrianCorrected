@@ -20,7 +20,7 @@ public class BingSearch {
 	public static List<SearchEntry> search(String phrase, String field, int hits){
 		
 	    String doc = query(phrase);
-	    String ret[] = new String[hits];
+	    List<SearchEntry> ret = new ArrayList<SearchEntry>();
 	    
 	    //Parsing response from Bing.
         TextMatcher matcher = new TextMatcher<String>(doc);
@@ -46,6 +46,7 @@ public class BingSearch {
         	 int redundantIndex = tmp.indexOf("-");
         	 if (redundantIndex > 0)
         		 tmp = tmp.substring(0, tmp.indexOf("-"));
+        	 
         	 ret[i] = tmp;
         	 
         	 
