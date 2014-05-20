@@ -38,7 +38,7 @@ IBM Watson inspired Jeperdy question/answering program.
  
  **Maciej** *'Pływający Bankier'* **Marzec** <- Providing fast acces to money. :3
  
- **Michał** *'Businessman'* **Klepacki** 
+ **Michał** *'Businessman'* **Klepacki** <-AI Specialist.
  
  **Michał** *'FileLoop'* **Ostrowski** <- Destroying system with loop that creates billions of files. 
 
@@ -53,4 +53,6 @@ IBM Watson inspired Jeperdy question/answering program.
  **Kamil** *'NoStress'* **Rychta** <- Mental support from foreign countries.
 ##Donate us!!
 [![Donate us](http://necronia.com/img/paypalbutton.png)](google.pl)
-##Hall of Fame
+##R.I.P
+
+ **Michał** *'WhoIsThis, WhereAreYou'* **Różański** <- 
