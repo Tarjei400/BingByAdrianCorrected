@@ -38,13 +38,14 @@ import org.apache.lucene.util.Version;
 import java.util.*;
 
 /** Simple command-line based search demo. */
-public class LuceneSearchFiles {
+public class LuceneSearch {
  
   private static String m_index = "LuceneMiniWikiIndex";
-  private LuceneSearchFiles() {}
+  private LuceneSearch() {}
 
   /** Simple command-line based search demo. */
   public static List<SearchEntry> search(String phrase, String field, int hitsPerPage){
+	  System.out.println("Searching for: " + field);	 
 	  List<SearchEntry> ret = new ArrayList<SearchEntry>();
 	  try{
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(new File(m_index)));
@@ -73,10 +74,10 @@ public class LuceneSearchFiles {
 	    }
 	   reader.close();
 	  }catch (IOException e){
-		  
+		  System.out.println(e.getMessage());
 	  }
 	  catch (ParseException e){
-		  
+		  System.out.println(e.getMessage());		  
 	  }
 	  return ret;
   }

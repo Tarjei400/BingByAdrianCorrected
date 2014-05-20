@@ -15,7 +15,7 @@ public class JQuestions {
 			    .create();       // new instance is immutable			
 		csv.read(m_fileName, new CSVReadProc() {
 		    public void procRow(int rowIndex, String... values) {
-		        System.out.println(rowIndex + ": " + Arrays.asList(values[1]));
+		      //  System.out.println(rowIndex + ": " + Arrays.asList(values[1]));
 		        QuestionType q = new QuestionType();
 		        q.setAnswer(values[0]);
 		        q.setQuestion(values[1]);
@@ -25,11 +25,11 @@ public class JQuestions {
 		});
 		
 	}
-	public List<String> shuffle(int amount) throws Exception{
+	public List<QuestionType> shuffle(int amount) throws Exception{
 		if (m_questions.size() < amount)
 			throw new Exception("You dont have enought question to shuffle that many of them");
 		
-		List<String> ret = new ArrayList<String>();
+		List<QuestionType> ret = new ArrayList<QuestionType>();
 		Random r = new Random();
 		
 		for (int i = 0; i < amount; i++){

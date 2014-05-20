@@ -47,16 +47,18 @@ public class BingSearch {
         	 if (redundantIndex > 0)
         		 tmp = tmp.substring(0, tmp.indexOf("-"));
         	 
-        	 ret[i] = tmp;
+        	 SearchEntry se = new SearchEntry();
+        	 se.setTitle(tmp);
+
+        	 ret.add(se);
         	 
         	 
         	// f.writeln(title);
         	// f.writeln(description);
         	// f.writeln(url);
         	// f.writeln("");      	
-        	 System.out.println(tmp);
+        	// System.out.println(tmp);
 
-        	 i++;
         }
         return ret;
        // f.endwrite();		
@@ -84,7 +86,7 @@ public class BingSearch {
 	                (conn.getInputStream())));
 	        StringBuilder sb = new StringBuilder();
 	        String output;
-	        System.out.println("Output from Server .... \n");
+	       // System.out.println("Output from Server .... \n");
 	        char[] buffer = new char[4096];
 	        while ((output = br.readLine()) != null) {
         	

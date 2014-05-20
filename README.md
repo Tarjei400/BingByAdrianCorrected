@@ -36,7 +36,7 @@ IBM Watson inspired Jeperdy question/answering program.
  
  **Alexandra** *'MergingMaker'* **Skierbieszewska**
  
- **Maciej** *'Banker'* **Marzec** <- Providing fast acces to money. :3
+ **Maciej** *'Pływający Bankier'* **Marzec** <- Providing fast acces to money. :3
  
  **Michał** *'Businessman'* **Klepacki** 
  
@@ -46,8 +46,11 @@ IBM Watson inspired Jeperdy question/answering program.
 
  **Karol** *'Donator'* **Koc** <- 
  
- **Krzysztof** *'Dezerter'* **Gawliński** <- 
+ **Krzysztof** *'Dezerter'* **Gawliński** <- Best DoTA Player.
 
+ **Damian** *'TechnicalSupport'* **Wiater** <- 
+ 
+ **Kamil** *'NoStress'* **Rychta** <- Mental support from foreign countries.
 ##Donate us!!
 [![Donate us](http://necronia.com/img/paypalbutton.png)](google.pl)
 ##Hall of Fame
