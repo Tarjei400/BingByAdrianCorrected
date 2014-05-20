@@ -45,7 +45,7 @@ public class LuceneSearch {
 
   /** Simple command-line based search demo. */
   public static List<SearchEntry> search(String phrase, String field, int hitsPerPage){
-	  System.out.println("Searching for: " + field);	 
+	 // System.out.println("Searching for: " + field);	 
 	  List<SearchEntry> ret = new ArrayList<SearchEntry>();
 	  try{
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(new File(m_index)));
@@ -55,7 +55,7 @@ public class LuceneSearch {
 	    QueryParser parser = new QueryParser(Version.LUCENE_40, field, analyzer);
 	    
 	    Query query = parser.parse(phrase);
-	    System.out.println("Searching for: " + query.toString(field));	 
+	    //System.out.println("Searching for: " + query.toString(field));	 
 	   
 	    searcher.search(query, null, hitsPerPage);
 	    
@@ -69,7 +69,7 @@ public class LuceneSearch {
 	        String title = doc.get("title");
 	        se.setTitle(title);
 	        se.setScore(hit.score);
-	        System.out.println(hit.score+" -"+title);
+	       // System.out.println(hit.score+" -"+title);
 	        ret.add(se);
 	    }
 	   reader.close();

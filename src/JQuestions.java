@@ -18,7 +18,8 @@ public class JQuestions {
 		      //  System.out.println(rowIndex + ": " + Arrays.asList(values[1]));
 		        QuestionType q = new QuestionType();
 		        q.setAnswer(values[0]);
-		        q.setQuestion(values[1]);
+		        String question = values[1].replaceAll("&amp;", "");
+		        q.setQuestion(question);
 		        
 		        m_questions.add(q);
 		    }
