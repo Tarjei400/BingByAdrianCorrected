@@ -5,10 +5,10 @@ import java.util.Arrays;
 
 public class JQuestions {
 	public static String m_fileName = "../jeperdy-flat-file.csv";
-	public List<String> m_questions;
+	public List<QuestionType> m_questions;
 	
 	public JQuestions() {
-		m_questions = new ArrayList<String>();
+		m_questions = new ArrayList<QuestionType>();
 		CSV csv = CSV
 			    .separator(';')  // delimiter of fields
 			    .quote('"')      // quote character
@@ -16,7 +16,11 @@ public class JQuestions {
 		csv.read(m_fileName, new CSVReadProc() {
 		    public void procRow(int rowIndex, String... values) {
 		        System.out.println(rowIndex + ": " + Arrays.asList(values[1]));
-		        m_questions.add(values[0]);
+		        QuestionType q = new QuestionType();
+		        q.setAnswer(values[0]);
+		        q.setQuestion(values[1]);
+		        
+		        m_questions.add(q);
 		    }
 		});
 		
