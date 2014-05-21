@@ -19,6 +19,7 @@ public class TestSet {
 			List<SearchEntry> validationSet = BingSearch.search(q.getQuestion(), "title", 10);
 			int BingRank = 0;
 			 int j = 0;
+			 boolean printQuestion = true;
 			for (SearchEntry lse : search){
 				j++;
 				String CA = lse.getTitle().toLowerCase();
@@ -33,12 +34,21 @@ public class TestSet {
 						break;
 					}
 				}
-				int isTrue = 0;
-				if(CA.indexOf(q.getAnswer().toLowerCase()) > 0){
+				LogisticRegression lr = new LogisticRegression(-0.67, 0.47);
+				double pr = lr.test(lse.getScore());
+				if (printQuestion){
 					System.out.println("Question:"+q.getQuestion());
-					System.out.println("Outputs : "+search.size()+" "+q.getQuestion());	
 					System.out.println("Answer : "+q.getAnswer());	
 					System.out.println("CA : "+CA);	
+					System.out.println("Prob: "+pr);
+				}
+				printQuestion = false;
+				int isTrue = 0;
+				if(CA.indexOf(q.getAnswer().toLowerCase()) > 0){
+					
+					System.out.println("Outputs : "+search.size()+" "+q.getQuestion());	
+				
+					
 					System.out.println("BingRank : "+bingRank);	
 					amount++;
 					isTrue = 1;
