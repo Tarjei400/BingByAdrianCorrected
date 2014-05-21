@@ -65,8 +65,9 @@ IBM Watson inspired, Jeperdy question/answering program.
 
  **Damian** *'TechnicalSupport'* **Wiater** <- 
  
- **Mariusz** *'Sisharper'** *Bączewski*
+ **Mariusz** *'Sisharper'* **Bączewski**
 
+ **Schalik**
 ##Donate us!!
 [![Donate us](http://necronia.com/img/paypalbutton.png)](google.pl)
 ##R.I.P
