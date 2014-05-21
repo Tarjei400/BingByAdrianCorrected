@@ -50,9 +50,10 @@ IBM Watson inspired Jeperdy question/answering program.
 
  **Damian** *'TechnicalSupport'* **Wiater** <- 
  
- **Kamil** *'NoStress'* **Rychta** <- Mental support from foreign countries.
+
 ##Donate us!!
 [![Donate us](http://necronia.com/img/paypalbutton.png)](google.pl)
 ##R.I.P
 
  **Michał** *'WhoIsThis, WhereAreYou'* **Różański** <- 
+ **Kamil** *'NoStress'* **Rychta** <- Mental support from foreign countries.
