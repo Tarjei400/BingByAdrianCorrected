@@ -55,7 +55,7 @@ public class FileHandler {
 	}
 	
 	public void endwrite(){
-		m_write.close();
+		try {m_write.close();} catch (IOException e) {}
 	}
 	
 	public String readLine() throws IOException{
