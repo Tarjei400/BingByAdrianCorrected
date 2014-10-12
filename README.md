@@ -44,34 +44,5 @@ IBM Watson inspired, Jeperdy question/answering program.
   *Add WEKA Machine learning. (Work but not very efficient)*
   
   *Add OpenNLP support.
-##Credits
- **Adrian** *'NoMoney'* **Jutrowski**
- 
- **Przemysław** *'Commander'* **Jeżewski**
- 
- **Alexandra** *'MergingMaker'* **Skierbieszewska**
- 
- **Maciej** *'Pływający Bankier'* **Marzec** <- Providing fast acces to money. :3
- 
- **Michał** *'Businessman'* **Klepacki** <-AI Specialist.
- 
- **Michał** *'FileLoop'* **Ostrowski** <- Destroying system with loop that creates billions of files. 
 
- **Krzysztof** *'Smugler'* **Wołkowski** <- Providing access to tools that allowed us exchenge data in extremely low badwinch environment.
-
- **Karol** *'Donator'* **Koc** <- 
- 
- **Krzysztof** *'Dezerter'* **Gawliński** <- Best DoTA Player.
-
- **Damian** *'TechnicalSupport'* **Wiater** <- 
- 
- **Mariusz** *'Sisharper'* **Bączewski**
-
- **Schalik**
-##Donate us!!
-[![Donate us](http://necronia.com/img/paypalbutton.png)](google.pl)
-##R.I.P
-
- **Michał** *'WhoIsThis, WhereAreYou'* **Różański** <- 
- **Kamil** *'NoStress'* **Rychta** <- Mental support from foreign countries.
  
